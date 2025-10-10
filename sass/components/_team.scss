@@ -1,0 +1,151 @@
+// Components for TEAM
+
+@use "../abstracts/variables" as a;
+
+#profissionais {
+  padding-top: a.$section-gap;
+  padding-bottom: a.$section-gap;
+  background-color: white;
+}
+
+.team-title-con {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+    align-items: center;
+
+  h3 {
+    font-family: a.$times;
+    font-size: a.$m-subtitle;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: a.$blue;
+    opacity: .75;
+  }
+
+  h4 {
+    font-family: 'ubuntubold', a.$ubuntu;
+    font-size: a.$m-title;
+    text-transform: uppercase;
+    color: a.$blue;
+  }
+}
+
+.team-cards-con {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: a.$blur-shadow;
+    background-color: a.$blue;
+    border-radius: a.$round-border;
+    max-width: 450px;
+    transition: a.$basic-transition;
+
+    &:hover {
+        box-shadow: a.$click-shadow;
+        transform: translateY(-10px);
+    }
+
+    .team-image {
+        width: 100%;
+    }
+    
+    img {
+        width: 100%;
+        border-top-left-radius: a.$round-border;
+        border-top-right-radius: a.$round-border;
+        z-index: 1;
+        position: relative;
+    }
+
+    .team-image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: a.$round-border;
+        z-index: 2;
+    }
+}
+
+.team-content {
+    margin-top: -25px;
+    background-color: a.$blue;
+    padding: 0px 50px 50px 50px;
+    z-index: 5;
+    display: flex;
+    justify-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom-left-radius: a.$round-border;
+    border-bottom-right-radius: a.$round-border;
+
+    p {
+        font-family: 'ubuntulight', a.$ubuntu;
+        font-size: a.$m-body;
+        color: white;
+        line-height: 1.5;
+        opacity: .8;
+    }
+}
+
+.member-name {
+    margin-top: 15px;
+    font-family: 'ubuntulight', a.$ubuntu;
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+
+    span {
+        font-family: 'ubuntubold', a.$ubuntu;
+        font-weight: bold;
+    }
+}
+
+.member-oab {
+    font-family: 'ubuntulight', a.$ubuntu;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    i {
+        font-size: 20px;
+        margin-top: -2px;
+    }
+}
+
+.member-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+// Tablet: 2 colunas
+@media (min-width: 700px) {
+    .team-cards-con {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    }
+}

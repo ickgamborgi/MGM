@@ -1,0 +1,106 @@
+// Components for AREAS
+
+@use "../abstracts/variables" as a;
+
+#areas {
+  padding-top: a.$section-gap;
+  padding-bottom: a.$section-gap;
+  background-color: white;
+}
+
+.areas-title-con {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+    align-items: center;
+
+  h3 {
+    font-family: a.$times;
+    font-size: a.$m-subtitle;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: a.$blue;
+    opacity: .75;
+  }
+
+  h4 {
+    font-family: 'ubuntubold', a.$ubuntu;
+    font-size: a.$m-title;
+    text-transform: uppercase;
+    color: a.$blue;
+  }
+}
+
+.areas-cards-con {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.areas-card {
+    background-color: white;
+    box-shadow: a.$blur-shadow;
+    border-radius: a.$round-border;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    transition: a.$basic-transition;
+    border: 1px solid white;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: a.$blur-shadow;
+        transform: translateY(-10px);
+        border: 1px solid a.$light-blue;
+    }
+}
+
+.areas-card-image {
+    height: 50px;
+}
+
+.areas-card-title-con {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.areas-card-subtitle {
+    font-family: 'ubuntulight', a.$ubuntu;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: a.$blue;
+    opacity: .75;
+}
+
+.areas-card-title {
+    font-family: 'ubuntubold', a.$ubuntu;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: a.$blue;
+}
+
+// Tablet: 2 colunas
+@media (min-width: 760px) {
+  .areas-cards-con {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Desktop: 3 colunas
+@media (min-width: 1000px) {
+  .areas-cards-con {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
