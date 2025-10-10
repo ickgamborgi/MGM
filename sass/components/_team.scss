@@ -38,7 +38,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 25px;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    gap: 30px;
 }
 
 .team-member {
@@ -56,7 +59,7 @@
 
     &:hover {
         box-shadow: a.$click-shadow;
-        transform: translateY(-10px);
+        transform: scale(1.02);
     }
 
     .team-image {
@@ -83,9 +86,9 @@
 }
 
 .team-content {
-    margin-top: -25px;
+    margin-top: -50px;
     background-color: a.$blue;
-    padding: 0px 50px 50px 50px;
+    padding: 0px 50px 25px 50px;
     z-index: 5;
     display: flex;
     justify-items: stretch;
@@ -141,11 +144,20 @@
     gap: 10px;
 }
 
+.member-text {
+    margin-bottom: 25px;
+}
+
 // Tablet: 2 colunas
 @media (min-width: 700px) {
-    .team-cards-con {
+ .team-cards-con {
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    gap: 25px;
-    }
+    justify-content: center;
+    align-items: start;
+    box-sizing: border-box;
+    height: 100%;
+    gap: 30px;
+ }
 }

@@ -35,7 +35,9 @@
 #introduction {
   padding-top: a.$section-gap;
   padding-bottom: a.$section-gap;
-  background-color: white;;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 
   img {
     border-radius: a.$round-border;
@@ -43,6 +45,7 @@
     object-fit: cover;
     object-position: center;
     box-shadow: a.$blur-shadow;
+    height: 100%;
   }
 }
 
@@ -123,4 +126,23 @@
     padding-left: 30px;
     margin-top: 0px;
   }
+
+  #introduction {
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+}
+
+// FOR LARGE DESKTOP
+@media (min-width: 1200px) {
+  #introduction {
+
+  img {
+    height: 450px;
+    width: 100%;
+  }
+}
 }
