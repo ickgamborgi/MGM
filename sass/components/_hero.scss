@@ -1,0 +1,126 @@
+// Components for HERO * INTRODUCTION
+
+@use "../abstracts/variables" as a;
+
+#hero {
+  background-image: url('../images/hero.webp');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  img {
+    width: 230px;
+    z-index: 5;
+  }
+}
+
+#blue-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #25385f9d; // Semi-transparent blue overlay
+  z-index: 3; // Ensure the overlay is behind the content
+}
+
+#introduction {
+  padding-top: a.$section-gap;
+  padding-bottom: a.$section-gap;
+  background-color: white;;
+
+  img {
+    border-radius: a.$round-border;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: a.$blur-shadow;
+  }
+}
+
+.introduction-con {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.introduction-title-con {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h4 {
+    font-family: a.$times;
+    font-size: a.$m-subtitle;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: a.$blue;
+    opacity: .75;
+  }
+
+  h5 {
+    font-family: 'ubuntubold', a.$ubuntu;
+    font-size: a.$m-title;
+    text-transform: uppercase;
+    color: a.$blue;
+  }
+}
+
+.introduction-body-con {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    font-family: a.$ubuntu;
+    font-size: a.$m-body;
+    color: a.$gray;
+    line-height: 1.6;
+  }
+}
+
+.button {
+  background-color: a.$blue;
+  color: white;
+  font-family: 'ubuntubold', a.$ubuntu;
+  font-size: a.$m-button;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: a.$round-border;
+  box-shadow: a.$blur-shadow;
+  transition: a.$basic-transition;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: a.$dark-blue;
+  box-shadow: a.$click-shadow;
+}
+
+// FOR TABLET + DESKTOP
+@media (min-width: 768px) {
+  #hero {
+   justify-content: start;
+  }
+
+  .introduction-con {
+    align-items: start;
+    text-align: start;
+    padding-left: 30px;
+    margin-top: 0px;
+  }
+}

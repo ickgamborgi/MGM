@@ -1,5 +1,33 @@
-// Variables
-
 //  Stores SASS variables like colors, font sizes, spacing, and other values that are likely to be reused.
 
 @use "fonts";
+
+// Colors
+$blue: #36476b;
+$lighter-blue: #6579A3;
+$light-blue: #4F6289;
+$dark-blue: #192847;
+$gray: #7f7f7f;
+
+
+// Fonts
+$ubuntu: "Ubuntu", "Helvetica", "Arial", sans-serif;
+$times: "Times New Roman", Times, serif;
+
+// Font Sizes
+$header: 14px;
+$m-title: 28px;
+$m-detail: 24px;
+$m-button: 14px;
+$m-subtitle: 16px;
+$m-body: 14px;
+
+$x-title: 36px;
+
+//Others
+$blur-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.15);
+$click-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.35);
+
+$round-border: 10px;
+$section-gap: 75px;
+$basic-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
