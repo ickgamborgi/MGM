@@ -1,0 +1,135 @@
+// Component for HEADER
+
+@use "../abstracts/variables" as a;
+
+#sticky-nav-con {
+  position: sticky;
+  background-color: #36476bdc;
+  top: 0;
+  z-index: 1000;
+  box-shadow: a.$blur-shadow;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.logo-header img {
+  padding-top: 20px;
+  width: 50px;
+}
+
+.links-header {
+  display: flex;
+  align-items: center;
+}
+
+.links-header ul {
+  margin: 0;
+  display: flex;
+}
+
+.links-header ul li {
+  transition: 0.25s ease-in all;
+}
+
+.links-header ul li a {
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: a.$header;
+  font-family: 'ubunturegular', a.$ubuntu;
+  letter-spacing: 1px;
+  display: block;
+  cursor: pointer;
+  color: white;
+  transition: a.$basic-transition;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+
+  i {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    border-radius: 0px;
+    background-color: #77839eb3;
+  }
+}
+
+.navbar-header button {
+  height: 50px;
+  width: 50px;
+  background: url(../images/burger-button.svg) no-repeat center;
+  transition: all 0.5s ease;
+  border: 0;
+  position: absolute;
+  top: 0px;
+  right: 8%;
+  display: none;
+}
+
+//  Responsive for
+@media (max-width: 768px) {
+  .navbar-header button {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .navbar-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .logo-header img {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 50px;
+}
+
+  .links-header {
+    width: 100%;
+    z-index: 100;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .links-header ul {
+    flex-direction: column;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+
+  .links-header ul li {
+    text-align: center;
+    cursor: pointer;
+
+    a {
+      padding: 22px;
+    }
+  }
+
+  .links-header.active {
+    height: 250px;
+    display: flex;
+  }
+
+  .links-header.active ul {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #burger-button.active {
+    transform: rotate(90deg);
+  }
+}
