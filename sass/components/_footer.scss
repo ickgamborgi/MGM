@@ -1,0 +1,92 @@
+// Components for FOOTER
+
+@use "../abstracts/variables" as a;
+
+footer {
+  padding-top: a.$section-gap;
+  padding-bottom: a.$section-gap;
+  background-color: a.$blue;
+}
+
+.footer-con {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    img {
+        max-width: 150px;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: a.$ubuntu;
+    font-weight: 200;
+    font-size: a.$m-body;
+    text-transform: uppercase;
+    color: white;
+    transition: a.$basic-transition;
+    
+    a {
+        color: white;
+        text-decoration: none;
+        transition: a.$basic-transition;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+}
+
+.footer-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        transition: a.$basic-transition;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+            box-shadow: a.$click-shadow;
+            border-radius: 100%;
+        }
+    }
+
+    p {
+        font-family: a.$ubuntu;
+        font-weight: 500;
+        font-size: a.$m-body;
+        text-transform: uppercase;
+        line-height: 1.75;
+        color: white;
+        opacity: .75;
+        max-width: 300px;
+        margin: 0;
+    }
+}
+
+// Desktop
+@media (min-width: 1000px) {
+    .footer-nav {
+        flex-direction: row;
+        gap: 50px;
+    }
+}

@@ -59,7 +59,7 @@
 
     &:hover {
         box-shadow: a.$blur-shadow;
-        transform: translateY(-10px);
+        transform: scale(1.04);
         border: 1px solid a.$light-blue;
     }
 }

@@ -1,0 +1,139 @@
+// Components for OFFICES
+
+@use "../abstracts/variables" as a;
+
+#escritorios {
+  padding-top: a.$section-gap;
+  padding-bottom: a.$section-gap;
+  background-color: white;
+}
+
+.office-title-con {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+    align-items: center;
+
+  h3 {
+    font-family: a.$times;
+    font-size: a.$m-subtitle;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: a.$blue;
+    opacity: .75;
+  }
+
+  h4 {
+    font-family: 'ubuntubold', a.$ubuntu;
+    font-size: a.$m-title;
+    text-transform: uppercase;
+    color: a.$blue;
+  }
+}
+
+.office-cards-con {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.office-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: a.$round-border;
+    box-shadow: a.$blur-shadow;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    padding: 60px 30px 50px 30px;
+    gap: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: a.$basic-transition;
+
+    &:hover {
+        box-shadow: a.$click-shadow;
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+}
+
+.office-card-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.office-city {
+    font-family: a.$ubuntu;
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 3;
+}
+
+.office-state {
+    font-family: a.$times;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    opacity: 0.75;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 3;
+}
+
+.office-address {
+    font-family: a.$ubuntu;
+    font-size: a.$m-body;
+    color: white;
+    opacity: 0.75;
+    z-index: 3;
+    max-width: 300px;
+}
+
+.office-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+#lages {
+    background-image: url('../images/lages.webp');
+}
+
+#florianopolis {
+    background-image: url('../images/florianopolis.webp');
+}
+
+
+
+
+
+// Tablet: 2 colunas
+@media (min-width: 700px) {
+.office-cards-con {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.office-card {
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    max-width: 450px;
+}
+}
