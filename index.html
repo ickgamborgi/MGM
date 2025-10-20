@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Meta Descriptions -->
-    <meta name="description" content="">
+    <meta name="description" content="O escritório Matos & Gamborgi Menezes Advocacia oferece soluções jurídicas em Direito Empresarial, Imobiliário, Civil, Trabalhista e Eleitoral. Atuação ética, transparente e eficiente em Lages e Florianópolis. Agende sua consulta.">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="Matos & Gamborgi Menezes Advocacia">
+    <meta property="og:description" content="O escritório Matos & Gamborgi Menezes Advocacia oferece soluções jurídicas em Direito Empresarial, Imobiliário, Civil, Trabalhista e Eleitoral. Atuação ética, transparente e eficiente em Lages e Florianópolis. Agende sua consulta.">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Matos & Gamborgi Menezes Advocacia">
+    <meta name="twitter:description" content="O escritório Matos & Gamborgi Menezes Advocacia oferece soluções jurídicas em Direito Empresarial, Imobiliário, Civil, Trabalhista e Eleitoral. Atuação ética, transparente e eficiente em Lages e Florianópolis. Agende sua consulta.">
     <meta name="twitter:image" content="">
 
     <!-- Ubuntu Font -->
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="icon" type="image/x-icon" href="./images/iv_icone_azul.svg">
 
     <!-- Script tags -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> <!-- link to greensock main library and scroll plugin -->
@@ -64,10 +64,10 @@
                     <div class="links-header">
                         <h4 class="hidden">Links Cabeçalho</h4>
                         <ul>
-                            <li><a href="#" class="nav-item"><h5>Início</h5></a></li>
-                            <li><a href="#" class="nav-item"><h5>Áreas</h5></a></li>
-                            <li><a href="#" class="nav-item"><h5>Profissionais</h5></a></li>
-                            <li><a href="#" class="nav-item"><h5>Contato</h5></a></li>
+                            <li><a href="index.html" class="nav-item"><h5>Início</h5></a></li>
+                            <li><a href="index.html#areas" class="nav-item"><h5>Áreas</h5></a></li>
+                            <li><a href="index.html#profissionais" class="nav-item"><h5>Profissionais</h5></a></li>
+                            <li><a href="index.html#contato" class="nav-item"><h5>Contato</h5></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -175,7 +175,7 @@
             <div class="team-cards-con col-span-full">
                 <h3 class="hidden">Cards de Profissionais</h3>
                 <!-- Leonardo Matos -->
-                <a class="team-member" href="#">
+                <a class="team-member" id="leo" href="#">
                     <div class="team-image">
                       <img src="./images/leonardo-matos.webp" alt="Leonardo Matos da Luz">
                       <div class="team-image-overlay"></div>
@@ -250,24 +250,58 @@
             </div>
         </section>
 
+        <section id="contato" class="grid-con">
+            <h2 class="hidden">Sessão de Contato</h2>
+            <div class="contact-text-con col-span-full">
+                <div class="office-title-con col-span-full">
+                <h3 class="office-subtitle">Contato</h3>
+                <h4 class="office-title">Como podemos te ajudar?</h4>
+            </div>
+                <p class="contact-text">Ao enviar este formulário, você demonstra estar ciente e concorda com nossa <a href="#"><span>Política de Privacidade</span></a></p>
+            </div>
+            <div class="contact-form-con col-span-full ">
+                <h3 class="hidden">Formulário de Contato</h3>
+                <!-- Form -->
+                <form class="form" method="post" action="sendmail.php">
+                    <input name="name" type="text" placeholder="Seu nome...">
+                    <input name="email" type="email" placeholder="Seu e-mail...">
+                    <input name="phone" type="phone" placeholder="Seu celular...">
+                    <input name="message" type="text"  placeholder="Sua demanda...">
+
+                    <!-- Honeypot Field (Hidden from Users) -->
+                    <input type="text" name="honeypot" id="honeypot">
+
+                    <!-- Math Question -->
+                    <input type="number" id="math-answer" name="math_answer" placeholder="1 + 1 = ?">
+                    <input type="hidden" id="math-expected" name="math_expected">
+                    
+                    <button name="submit" type="submit" value="Send"><span>Enviar ></span></button>
+                </form>
+
+                <div id="feedback" class="col-span-full"><p>Por favor, preencha todos os campos</p></div>
+            </div>
+
+        </section>
+
     </main>
     <!-- Footer -->
     <footer class="grid-con">
         <h2 class="hidden">Rodapé</h2>
         <div class="footer-con col-span-full">
             <div class="footer-1">
-                <a href="#"><img src="./images/logo-footer.svg" alt="MGM Minified Logo"></a>
+                <a href="index.html"><img src="./images/logo-footer.svg" alt="MGM Minified Logo"></a>
                 <div class="footer-nav">
-                    <a href="#">Página Principal</a>
-                    <a href="#">Contato</a>
+                    <a href="index.html">Página Principal</a>
+                    <a href="index.html#contato">Contato</a>
                     <a href="#">Política de Privacidade</a>
                 </div>
             </div>
             <div class="footer-2">
                 <img src="./images/icon-whats.svg" alt="Ícone WhatsApp">
-                <p>2025 &copy; Todos os Direitos Reservados Matos & Gamborgi Menezes</p>
+                <p>2025 &copy; Matos & Gamborgi Menezes <br>Todos os Direitos Reservados</p>
             </div>
         </div>
+    <p id="website-designer" class="col-span-full">Website desenvolvido por <a href="https://www.henriquegamborgi.com/br" target="_blank">Henrique Gamborgi Design</a></p>
     </footer>
 </body>
 </html>
