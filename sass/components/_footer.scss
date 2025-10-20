@@ -4,7 +4,6 @@
 
 footer {
   padding-top: a.$section-gap;
-  padding-bottom: a.$section-gap;
   background-color: a.$blue;
 }
 
@@ -72,14 +71,39 @@ footer {
 
     p {
         font-family: a.$ubuntu;
-        font-weight: 500;
+        font-weight: 100;
         font-size: a.$m-body;
-        text-transform: uppercase;
+        text-transform: capitalize;
         line-height: 1.75;
         color: white;
         opacity: .75;
-        max-width: 300px;
         margin: 0;
+    }
+}
+
+#website-designer {
+    justify-self: center;
+    font-family: a.$ubuntu;
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+    opacity: .5;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    max-width: 450px;
+    border-top: 1px solid white;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        transition: a.$basic-transition;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 

@@ -1,0 +1,117 @@
+// Components for CONTACT
+
+@use "../abstracts/variables" as a;
+
+#contato {
+  padding-top: a.$section-gap;
+  padding-bottom: a.$section-gap;
+  background-color: white;
+}
+
+.contact-text-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.contact-title {
+    font-family: 'ubuntulight', a.$ubuntu;
+    font-size: a.$m-title;
+    text-transform: uppercase;
+    color: a.$blue;
+
+    span {
+        font-family: 'ubuntubold', a.$ubuntu;
+    }
+}
+
+.contact-text {
+    font-family: a.$ubuntu;
+    font-size: a.$m-body;
+    color: a.$gray;
+
+    span {
+        font-family: 'ubuntubold', a.$ubuntu;
+        text-decoration: underline;
+        color: a.$blue;
+    }
+}
+
+.contact-form-con {
+    margin-top: 50px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+            border: 1px solid a.$light-blue;
+            padding: 10px 15px;
+            color: a.$light-blue;
+            font-family: a.$ubuntu;
+            border-radius: a.$round-border;
+            font-size: a.$m-body;
+
+            &::placeholder {
+                color: a.$light-blue;
+            }
+        }
+
+        button {
+            background-color: a.$blue;
+            color: white;
+            font-family: 'ubuntubold', a.$ubuntu;
+            font-size: a.$m-button;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: a.$round-border;
+            box-shadow: a.$blur-shadow;
+            transition: a.$basic-transition;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: a.$dark-blue;
+                box-shadow: a.$click-shadow;
+            }
+        }
+    }
+}
+
+#honeypot {
+    display: none;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-family: a.$ubuntu;
+    font-size: a.$m-body;
+    color: red;
+    text-align: center;
+
+    ::before {
+        content: "⚠ ";
+        color: red;
+    }
+}
+
+@media (min-width: 700px) {
+    .contact-text {
+        width: 75%;
+    }
+
+    .contact-form-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        width: 75%;
+        max-width: 900px;
+    }
+}
