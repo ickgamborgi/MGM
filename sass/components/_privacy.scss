@@ -1,0 +1,93 @@
+// Components for PRIVACY POLICY
+
+@use "../abstracts/variables" as a;
+
+#hero-privacy {
+  background-image: url('../images/hero.webp');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  z-index: 2;
+
+  img {
+    width: 230px;
+    z-index: 5;
+  }
+}
+
+#blue-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #25385f9d; // Semi-transparent blue overlay
+  z-index: 3; // Ensure the overlay is behind the content
+}
+
+.hero-title-2 {
+    font-family: a.$ubuntu;
+    color: white;
+    font-size: a.$m-title;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+}
+
+#privacy-policy {
+    background-color: white;
+    padding-top: a.$section-gap;
+    padding-bottom: a.$section-gap;
+    gap: 50px;
+}
+
+.privacy-title {
+    font-family: 'ubuntulight';
+    color: a.$blue;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+        letter-spacing: .5px;
+        color: gray;
+        text-transform: capitalize;
+    }
+}
+
+.privacy-con {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+        font-family: a.$ubuntu;
+        color: a.$blue;
+        font-size: 22px;
+    }
+
+    p {
+        font-family: a.$ubuntu;
+        color: a.$gray;
+        font-size: a.$m-body;
+
+        
+    }
+}
+
+// FOR TABLET + DESKTOP
+@media (min-width: 768px) {
+}
+
+// FOR LARGE DESKTOP
+@media (min-width: 1200px) {
+}

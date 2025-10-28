@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
+<?php
+require_once('includes/connect.php');
+?>
+
 <!-- Heading -->
 <head>
     <meta charset="UTF-8">
@@ -80,7 +85,7 @@
             <div id="blue-overlay" class="col-span-full">
                 <h3 class="hidden">Degradê do Banner Principal</h3>
             </div>
-            <img src="./images/logo-type-white.svg" alt="MGM Logotipo" class="col-span-full">
+            <img src="./images/logo-type-white.svg" alt="MGM Logotipo" class="col-span-full hero-image">
         </section>
 
         <!-- Introduction Section -->

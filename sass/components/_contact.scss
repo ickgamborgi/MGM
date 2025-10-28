@@ -93,10 +93,17 @@
     color: red;
     text-align: center;
 
-    ::before {
-        content: "⚠ ";
-        color: red;
+    p {
+        margin-top: 10px;
     }
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+.success {
+    color: green;
 }
 
 @media (min-width: 700px) {
