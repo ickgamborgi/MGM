@@ -51,7 +51,7 @@ try {
     $stmt->execute();
 
     // Informações do email
-    $to = 'henriquegamborgi@gmail.com', 'escritorio@advocaciamgm.com.br';
+    $to = 'henriquegamborgi@gmail.com, escritorio@advocaciamgm.com.br';
     $subject = 'Novo Contato pelo Website';
     $headers = "From: no-reply@advocaciamgm.com.br\r\n";
     $headers .= "Reply-To: $email\r\n";

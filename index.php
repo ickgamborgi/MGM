@@ -201,7 +201,7 @@ require_once('includes/connect.php');
                     </div>
                 </a>
                 <!-- Matheus Gamborgi -->
-                <a class="team-member" id="matt" href="https://www.linkedin.com/in/matheus-gamborgi-menezes-345016144/">
+                <a class="team-member" id="matt" href="https://www.linkedin.com/in/matheus-gamborgi-menezes-345016144/" target=_blank>
                     <div class="team-image">
                       <img src="./images/matheus-gamborgi.webp" alt="Matheus Gamborgi Menezes">
                       <div class="team-image-overlay"></div>
