@@ -19,6 +19,8 @@
   img {
     width: 230px;
     z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -121,10 +123,13 @@
   }
 
   .introduction-con {
-    align-items: start;
-    text-align: start;
-    padding-left: 30px;
+    align-items: center;
+    text-align: center;
     margin-top: 0px;
+
+    p {
+      max-width: 750px;
+    }
   }
 
   #introduction {

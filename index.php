@@ -16,7 +16,7 @@ require_once('includes/connect.php');
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Matos & Gamborgi Menezes Advocacia">
     <meta property="og:description" content="O escritório Matos & Gamborgi Menezes Advocacia oferece soluções jurídicas em Direito Empresarial, Imobiliário, Civil, Trabalhista e Eleitoral. Atuação ética, transparente e eficiente em Lages e Florianópolis. Agende sua consulta.">
-    <meta property="og:image" content="https://advocaciamgm.com.br/images/intro.webp">
+    <meta property="og:image" content="https://advocaciamgm.com.br/images/minified.webp">
     <meta property="og:url" content="https://advocaciamgm.com.br">
     <meta property="og:type" content="website">
 
@@ -24,7 +24,7 @@ require_once('includes/connect.php');
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Matos & Gamborgi Menezes Advocacia">
     <meta name="twitter:description" content="O escritório Matos & Gamborgi Menezes Advocacia oferece soluções jurídicas em Direito Empresarial, Imobiliário, Civil, Trabalhista e Eleitoral. Atuação ética, transparente e eficiente em Lages e Florianópolis. Agende sua consulta.">
-    <meta name="twitter:image" content="https://advocaciamgm.com.br/images/intro.webp">
+    <meta name="twitter:image" content="https://advocaciamgm.com.br/images/minified.webp">
 
     <!-- Ubuntu Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -72,7 +72,7 @@ require_once('includes/connect.php');
                             <li><a href="index.php" class="nav-item"><h5>Início</h5></a></li>
                             <li><a href="index.php#areas" class="nav-item"><h5>Áreas</h5></a></li>
                             <li><a href="index.php#profissionais" class="nav-item"><h5>Profissionais</h5></a></li>
-                            <li><a href="index.php#contato" class="nav-item"><h5>Contato</h5></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=5548999368405&text=Ol%C3%A1,%20encontrei%20o%20n%C3%BAmero%20via%20website%20e%20preciso%20de%20ajuda%20legal!" target=_blank class="nav-item"><h5>Contato</h5></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -91,8 +91,7 @@ require_once('includes/connect.php');
         <!-- Introduction Section -->
         <section id="introduction" class="grid-con">
             <h2 class="hidden">Introdução</h2>
-            <img src="./images/intro.webp" alt="Trabalhando com o Escritório Matos & Gamborgi Menezes" class="introduction-image col-span-full m-col-start-1 m-col-end-7">
-            <div class="introduction-con col-span-full m-col-start-7 m-col-end-13">
+            <div class="introduction-con col-span-full m-col-start-2 m-col-end-12">
                 <h3 class="hidden">Título Introdutório</h3>
                 <div class="introduction-title-con">
                     <h4 class="introduction-subtitle">Sobre Nós</h4>
@@ -255,39 +254,6 @@ require_once('includes/connect.php');
             </div>
         </section>
 
-        <section id="contato" class="grid-con">
-            <h2 class="hidden">Sessão de Contato</h2>
-            <div class="contact-text-con col-span-full">
-                <div class="office-title-con col-span-full">
-                <h3 class="office-subtitle">Contato</h3>
-                <h4 class="office-title">Como podemos ajudar?</h4>
-            </div>
-                <p class="contact-text">Ao enviar este formulário, você demonstra estar ciente e concorda com nossa <a href="privacidade.php" target=_blank><span>Política de Privacidade</span></a></p>
-            </div>
-            <div class="contact-form-con col-span-full ">
-                <h3 class="hidden">Formulário de Contato</h3>
-                <!-- Form -->
-                <form class="form" method="post" action="sendmail.php">
-                    <input name="name" type="text" placeholder="Seu nome...">
-                    <input name="email" type="email" placeholder="Seu e-mail...">
-                    <input name="phone" type="phone" placeholder="Seu celular...">
-                    <input name="message" type="text"  placeholder="Sua demanda...">
-
-                    <!-- Honeypot Field (Hidden from Users) -->
-                    <input type="text" name="honeypot" id="honeypot">
-
-                    <!-- Math Question -->
-                    <input type="number" id="math-answer" name="math_answer" placeholder="1 + 1 = ?">
-                    <input type="hidden" id="math-expected" name="math_expected">
-                    
-                    <button class="button" name="submit" type="submit" value="Send"><span>Enviar ></span></button>
-                </form>
-
-                <div id="feedback" class="col-span-full"><p>Por favor, preencha todos os campos</p></div>
-            </div>
-
-        </section>
-
     </main>
     <!-- Footer -->
     <footer class="grid-con">
@@ -297,7 +263,7 @@ require_once('includes/connect.php');
                 <a href="index.php"><img src="./images/logo-footer.svg" alt="MGM Minified Logo"></a>
                 <div class="footer-nav">
                     <a href="index.php">Página Principal</a>
-                    <a href="index.php#contato">Contato</a>
+                    <a href="https://api.whatsapp.com/send?phone=5548999368405&text=Ol%C3%A1,%20encontrei%20o%20n%C3%BAmero%20via%20website%20e%20preciso%20de%20ajuda%20legal!" target=_blank>Contato</a>
                     <a href="privacidade.php" target=_blank>Política de Privacidade</a>
                 </div>
             </div>

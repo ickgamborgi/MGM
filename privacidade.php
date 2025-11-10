@@ -16,7 +16,7 @@ require_once('includes/connect.php');
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Política de Privacidade - Matos & Gamborgi Menezes Advocacia">
     <meta property="og:description" content="O escritório Matos & Gamborgi Menezes Advocacia oferece soluções jurídicas em Direito Empresarial, Imobiliário, Civil, Trabalhista e Eleitoral. Atuação ética, transparente e eficiente em Lages e Florianópolis. Agende sua consulta.">
-    <meta property="og:image" content="https://advocaciamgm.com.br/images/intro.webp">
+    <meta property="og:image" content="https://advocaciamgm.com.br/images/minified.webp">
     <meta property="og:url" content="https://advocaciamgm.com.br">
     <meta property="og:type" content="website">
 
@@ -24,7 +24,7 @@ require_once('includes/connect.php');
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Política de Privacidade - Matos & Gamborgi Menezes Advocacia">
     <meta name="twitter:description" content="O escritório Matos & Gamborgi Menezes Advocacia oferece soluções jurídicas em Direito Empresarial, Imobiliário, Civil, Trabalhista e Eleitoral. Atuação ética, transparente e eficiente em Lages e Florianópolis. Agende sua consulta.">
-    <meta name="twitter:image" content="https://advocaciamgm.com.br/images/intro.webp">
+    <meta name="twitter:image" content="https://advocaciamgm.com.br/images/minified.webp">
 
     <!-- Ubuntu Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -72,7 +72,7 @@ require_once('includes/connect.php');
                             <li><a href="index.php" class="nav-item"><h5>Início</h5></a></li>
                             <li><a href="index.php#areas" class="nav-item"><h5>Áreas</h5></a></li>
                             <li><a href="index.php#profissionais" class="nav-item"><h5>Profissionais</h5></a></li>
-                            <li><a href="index.php#contato" class="nav-item"><h5>Contato</h5></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=5548999368405&text=Ol%C3%A1,%20encontrei%20o%20n%C3%BAmero%20via%20website%20e%20preciso%20de%20ajuda%20legal!" target=_blank class="nav-item"><h5>Contato</h5></a></li>
                         </ul>
                     </div>
                 </nav>
@@ -161,7 +161,7 @@ require_once('includes/connect.php');
                 <a href="index.php"><img src="./images/logo-footer.svg" alt="MGM Minified Logo"></a>
                 <div class="footer-nav">
                     <a href="index.php">Página Principal</a>
-                    <a href="index.php#contato">Contato</a>
+                    <a href="https://api.whatsapp.com/send?phone=5548999368405&text=Ol%C3%A1,%20encontrei%20o%20n%C3%BAmero%20via%20website%20e%20preciso%20de%20ajuda%20legal!" target=_blank>Contato</a>
                     <a href="privacidade.php" target=_blank>Política de Privacidade</a>
                 </div>
             </div>
